@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+# Secrets — contains private keys, NEVER commit
+.env
+.env.*
+!.env.example
+
+*.log
+.DS_Store

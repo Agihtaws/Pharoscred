@@ -1,0 +1,20 @@
+node_modules/
+
+# Secrets — contains the deployer private key, NEVER commit
+.env
+.env.*
+!.env.example
+.password
+*.key
+
+# Hardhat build output
+artifacts/
+cache/
+typechain-types/
+coverage/
+coverage.json
+
+# Hardhat Ignition deployment state
+ignition/deployments/
+
+.DS_Store
