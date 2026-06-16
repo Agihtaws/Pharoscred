@@ -1,4 +1,5 @@
-// Leaderboard demo: batch-read and rank agent scores via MultiCall3.
+// Batch-read and rank agent scores via MultiCall3.
+// Live:  MCP_URL=https://pharoscred.onrender.com/mcp node leaderboard.mjs
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
@@ -7,7 +8,8 @@ const AGENTS = [
   "0x5A651a15692F2cA5E61d14376245CfEB7DDC9b6a", // provider
 ];
 
-const transport = new StreamableHTTPClientTransport(new URL("http://localhost:3000/mcp"));
+const MCP_URL = process.env.MCP_URL || "http://localhost:3000/mcp";
+const transport = new StreamableHTTPClientTransport(new URL(MCP_URL));
 const client = new Client({ name: "leaderboard", version: "1.0.0" });
 await client.connect(transport);
 const res = await client.callTool({ name: "leaderboard", arguments: { agents: AGENTS } });

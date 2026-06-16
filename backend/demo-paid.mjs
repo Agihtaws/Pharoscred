@@ -1,10 +1,12 @@
-// Phase 5b demo: real USDC-backed settlement moves a score.
+// Real USDC-backed settlement moves a score.
+// Live:  MCP_URL=https://pharoscred.onrender.com/mcp node demo-paid.mjs
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
 const PAYER = "0x16fe7e28314162b463dE747F61F7173D8a4c9f73";
 
-const transport = new StreamableHTTPClientTransport(new URL("http://localhost:3000/mcp"));
+const MCP_URL = process.env.MCP_URL || "http://localhost:3000/mcp";
+const transport = new StreamableHTTPClientTransport(new URL(MCP_URL));
 const client = new Client({ name: "demo-paid", version: "1.0.0" });
 await client.connect(transport);
 const call = async (n, a = {}) => (await client.callTool({ name: n, arguments: a })).content[0].text;
