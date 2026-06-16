@@ -1,23 +1,4 @@
-/**
- * PharosCred — Credit-Gated Payment Agent (consumer demo)
- * ------------------------------------------------------------------
- * A standalone agent that *consumes* the PharosCred skill. It demonstrates the
- * Skill -> Agent cascade: the agent embeds a trust POLICY, and calls the skill
- * for the on-chain credit PRIMITIVE.
- *
- * Flow:
- *   1. For each candidate provider, ask the PharosCred skill for its credit score.
- *   2. Reject anyone below the agent's credit threshold (the trust gate).
- *   3. Choose the highest-scoring qualifier.
- *   4. Settle with the chosen provider through the skill (real USDC moves).
- *   5. Re-read the score to show the payment fed back into the credit graph.
- *
- * Configure via env:
- *   MCP_URL           default http://localhost:3000/mcp  (or your Render /mcp URL)
- *   CREDIT_THRESHOLD  default 25      (minimum acceptable score, in bps)
- *   AMOUNT            default 1000000 (USDC base units; 1 USDC = 1000000)
- *   CANDIDATES        default = demo provider + a dead address (to show rejection)
- */
+
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 

@@ -1,5 +1,4 @@
-// Registers both demo agents on-chain (run once; "already registered" on re-run is harmless).
-// Live:  MCP_URL=https://pharoscred.onrender.com/mcp node register-demo.mjs
+
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 

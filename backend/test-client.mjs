@@ -1,5 +1,4 @@
-// Smoke test: lists the skill's tools and runs a few read queries.
-// Live:  MCP_URL=https://pharoscred.onrender.com/mcp node test-client.mjs
+
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 

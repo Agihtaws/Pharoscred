@@ -1,5 +1,4 @@
-// Batch-read and rank agent scores via MultiCall3.
-// Live:  MCP_URL=https://pharoscred.onrender.com/mcp node leaderboard.mjs
+
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 
