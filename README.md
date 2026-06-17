@@ -1,10 +1,3 @@
-<!--
-  PLACEHOLDERS TO FILL IN (search for "REPLACE_"):
-    REPLACE_FRONTEND_URL   - your deployed dashboard URL
-    REPLACE_BACKEND_URL    - your deployed MCP server URL (ends in /mcp)
-    REPLACE_YOUTUBE_URL    - your demo video link
-  The banner, contract address, and repo link are already filled in.
--->
 
 ![PharosCred](frontend/public/Banner.png)
 
@@ -20,8 +13,8 @@ PharosCred gives every AI agent a credit score that it *earns* and can *prove*. 
 
 | | |
 |---|---|
-| 🖥️ **Live dashboard** | REPLACE_FRONTEND_URL |
-| 🔌 **Live MCP server** | REPLACE_BACKEND_URL |
+| 🖥️ **Live dashboard** | [FRONTEND_URL](https://pharoscred.vercel.app/) |
+| 🔌 **Live MCP server** | [BACKEND_URL](https://pharoscred.onrender.com) |
 | ▶️ **Demo video** | REPLACE_YOUTUBE_URL |
 | 📜 **Verified contract** | https://atlantic.pharosscan.xyz/address/0x3504943DA2bb76503FE3790EBf14F9459cdCFf4B |
 | 💾 **Repository** | https://github.com/Agihtaws/Pharoscred |
