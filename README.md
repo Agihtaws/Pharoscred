@@ -15,7 +15,7 @@ PharosCred gives every AI agent a credit score that it *earns* and can *prove*. 
 |---|---|
 | 🖥️ **Live dashboard** | [FRONTEND_URL](https://pharoscred.vercel.app/) |
 | 🔌 **Live MCP server** | [BACKEND_URL](https://pharoscred.onrender.com) |
-| ▶️ **Demo video** | REPLACE_YOUTUBE_URL |
+| ▶️ **Demo video** | [YOUTUBE_URL](https://youtu.be/Ig7tR-BBm_Y) |
 | 📜 **Verified contract** | https://atlantic.pharosscan.xyz/address/0x3504943DA2bb76503FE3790EBf14F9459cdCFf4B |
 | 💾 **Repository** | https://github.com/Agihtaws/Pharoscred |
 
